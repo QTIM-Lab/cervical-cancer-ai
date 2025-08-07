@@ -121,38 +121,26 @@ body {
 }
 
 /* Research focus grid */
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.focus-item {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  border: 1px solid #dee2e6;
-  transition: all 0.3s ease;
+.research-tag {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
-.focus-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-.focus-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.focus-item h3 {
-  color: #2c3e50;
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
+.research-tag:hover {
+  background: #5a6fd8;
+  transform: translateY(-1px);
 }
 
 /* Project tiles */
@@ -288,13 +276,16 @@ body {
     padding: 1.5rem;
   }
   
-  .focus-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
   
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .research-tags {
+    justify-content: flex-start;
   }
 }
 </style>
@@ -405,33 +396,9 @@ body {
 </div>
 
 <div class="section">
-  <h2>🎯 Our Research Focus</h2>
-  <div class="focus-grid">
-    <div class="focus-item">
-      <span class="focus-icon">🔍</span>
-      <h3>Cervical Cancer Detection & Diagnosis</h3>
-    </div>
-    <div class="focus-item">
-      <span class="focus-icon">📱</span>
-      <h3>Mobile Applications for Cervical Health</h3>
-    </div>
-    <div class="focus-item">
-      <span class="focus-icon">🤖</span>
-      <h3>AI Model Deployment & Optimization</h3>
-    </div>
-    <div class="focus-item">
-      <span class="focus-icon">🌍</span>
-      <h3>Generalizability Studies Across Populations</h3>
-    </div>
-    <div class="focus-item">
-      <span class="focus-icon">📊</span>
-      <h3>Cervical Dynamics Analysis</h3>
-    </div>
-  </div>
-</div>
-
-<div class="section">
   <h2>💻 Research Projects</h2>
+  <p>Explore our comprehensive suite of AI-powered tools and research initiatives for cervical cancer detection and prevention:</p>
+  
   <div class="project-grid">
     {% for project in site.projects %}
     <div class="project-tile">
@@ -439,11 +406,25 @@ body {
         <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
       </h3>
       <p class="project-description">{{ project.description }}</p>
-      {% if project.repo %}
-      <a href="{{ project.repo }}" class="project-link" target="_blank">🔗 View Repository</a>
-      {% endif %}
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <a href="{{ project.url | relative_url }}" class="project-link">📄 Learn More</a>
+        {% if project.repo %}
+        <a href="{{ project.repo }}" class="project-link" target="_blank" style="background: #28a745;">� View Repository</a>
+        {% endif %}
+      </div>
     </div>
     {% endfor %}
+  </div>
+  
+  <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; text-align: center;">
+    <h3 style="color: #2c3e50; margin-bottom: 1rem;">🎯 Our Research Areas</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem;">
+      <span style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">🔍 Detection & Diagnosis</span>
+      <span style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">📱 Mobile Health</span>
+      <span style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">🤖 AI Deployment</span>
+      <span style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">🌍 Global Health</span>
+      <span style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">� Data Analysis</span>
+    </div>
   </div>
 </div>
 
