@@ -74,6 +74,24 @@ Additional studies will focus on further refining AI algorithms, deploying AVE s
 
 **Learn more**: [PAVE Project Webinar](https://www.youtube.com/watch?v=QV9N84BtcM8) (co-sponsored by the American Cancer Society and Cervical Cancer Action for Elimination)
 
+## Publications
+
+Our research has been published in leading medical and computer science journals:
+
+- **Befano, B., Kalpathy-Cramer, J., Egemen, D.**, et al. (2025). "Initial evaluation of a new cervical screening strategy combining human papillomavirus genotyping and automated visual evaluation: the Human Papillomavirus-Automated Visual Evaluation Consortium." *J Natl Cancer Inst*, djaf054. [PMID: 40104876](https://pubmed.ncbi.nlm.nih.gov/40104876/)
+
+- **Ahmed, S.R., Befano, B., Egemen, D.**, et al. (2025). "Generalizable deep neural networks for image quality classification of cervical images." *Sci Rep*, 15(1):6312. [PMID: 39984572](https://pubmed.ncbi.nlm.nih.gov/39984572/)
+
+- **de Sanjosé, S., Perkins, R.B., Campos, N.**, et al. (2024). "Design of the HPV-automated visual evaluation (PAVE) study: Validating a novel cervical screening strategy." *Elife*, 12:RP91469. [PMID: 38224340](https://pubmed.ncbi.nlm.nih.gov/38224340/)
+
+- **Ahmed, S.R., Befano, B., Lemay, A.**, et al. (2023). "Reproducible and clinically translatable deep neural networks for cervical screening." *Sci Rep*, 13(1):21772. [PMID: 38066031](https://pubmed.ncbi.nlm.nih.gov/38066031/)
+
+- **Egemen, D., Perkins, R.B., Cheung, L.C.**, et al. (2024). "Artificial intelligence-based image analysis in clinical testing: lessons from cervical cancer screening." *J Natl Cancer Inst*, 116(1):26-33. [PMID: 37758250](https://pubmed.ncbi.nlm.nih.gov/37758250/)
+
+- **Perkins, R.B., Smith, D.L., Jeronimo, J.**, et al. (2023). "Use of risk-based cervical screening programs in resource-limited settings." *Cancer Epidemiol*, 84:102369. [PMID: 37105017](https://pubmed.ncbi.nlm.nih.gov/37105017/)
+
+*For a complete list of publications, please visit our [lab website](https://qtim-lab.github.io/).*
+
 ## Our Research Focus
 
 - **Cervical cancer detection and diagnosis**
