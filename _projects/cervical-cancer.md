@@ -1,7 +1,7 @@
 ---
 title: Cervical Cancer Baseline Pipeline
 repo: https://github.com/QTIM-Lab/cervical_cancer
-description: End-to-end detection & classification baseline using VIA data.
+description: End-to-end detection & classification baseline using imaging data.
 layout: default
 ---
 

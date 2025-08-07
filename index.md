@@ -52,40 +52,42 @@ layout: default
 }
 </style>
 
-# Cervical Cancer AI Suite
+# Cervical Cancer AI Suite for PAVE
 
-Welcome to QTIM Lab's cervical cancer AI research collection.
+Welcome to the PAVE project's AI research collection. This site showcases our projects focused on developing AI solutions for cervical cancer detection, analysis, and treatment planning.
+
+## Background
+
+The **HPV-automated visual evaluation (PAVE) Study** is an extensive, multinational initiative designed to advance cervical cancer prevention in resource-constrained regions. Cervical cancer disproportionally affects regions with limited access to preventive measures. PAVE aims to assess a novel screening-triage-treatment strategy integrating self-sampled HPV testing, deep-learning-based automated visual evaluation (AVE), and targeted therapies.
+
+## Methods
+
+Phase 1 of the PAVE effort involved screening up to 50,000 women aged 25-49 across nine countries, using self-collected vaginal samples for hierarchical HPV evaluation: HPV16, else HPV18/45, else HPV31/33/35/52/58, else HPV39/51/56/59/68 else negative. HPV-positive individuals undergo further evaluation, including pelvic exams, cervical imaging, and biopsies. AVE algorithms analyze images, assigning risk scores for precancer, validated against histologic high-grade precancer.
+
+## Results
+
+Triage of positives combines HPV genotyping (four groups in order of cancer risk) and visual inspection assisted by automated cervical visual evaluation (AVE) that classifies cervical appearance as severe, indeterminate, or normal. Data from 1832 HPV-positive participants across nine clinical sites confirmed that HPV genotype and AVE classification each strongly and independently predict risk of histologic CIN3+, with **<1% risk for the lowest strata and >25% for the highest risk strata**.
+
+## Next Steps
+
+Additional studies will focus on further refining AI algorithms, deploying AVE software and HPV genotype data in real-time clinical decision-making, evaluating feasibility, acceptability, cost-effectiveness, and health communication of the PAVE strategy in practice.
+
+**Learn more**: [PAVE Project Webinar](https://www.youtube.com/watch?v=QV9N84BtcM8) (co-sponsored by the American Cancer Society and Cervical Cancer Action for Elimination)
+
+## Our Research Focus
+
+- **Cervical cancer detection and diagnosis**
+- **Mobile applications for cervical health**
+- **AI model deployment and optimization**
+- **Generalizability studies across populations**
+- **Cervical dynamics analysis**
 
 ## Research Projects
 
-<div class="project-grid">
-  <div class="project-tile">
-    <h3 class="project-title">Cervical Cancer Baseline Pipeline</h3>
-    <p class="project-description">End-to-end detection & classification baseline using VIA data.</p>
-    <a href="https://github.com/QTIM-Lab/cervical_cancer" class="project-link" target="_blank">View Repository</a>
-  </div>
-  
-  <div class="project-tile">
-    <h3 class="project-title">Cervical Mobile App</h3>
-    <p class="project-description">Flutter-based point-of-care inference UI for Android devices.</p>
-    <a href="https://github.com/QTIM-Lab/cervical_mobile_app" class="project-link" target="_blank">View Repository</a>
-  </div>
-  
-  <div class="project-tile">
-    <h3 class="project-title">Cervical Dynamics</h3>
-    <p class="project-description">Spatio-temporal modelling of lesion regression & progression.</p>
-    <a href="https://github.com/QTIM-Lab/cervical-dynamics" class="project-link" target="_blank">View Repository</a>
-  </div>
-  
-  <div class="project-tile">
-    <h3 class="project-title">Cervix Generalizability</h3>
-    <p class="project-description">Cross-domain study on model robustness across global cohorts.</p>
-    <a href="https://github.com/QTIM-Lab/cervix_generalizability" class="project-link" target="_blank">View Repository</a>
-  </div>
-  
-  <div class="project-tile">
-    <h3 class="project-title">SLIM Deployment</h3>
-    <p class="project-description">Lightweight Torch + ONNX runtime container for edge GPUs.</p>
-    <a href="https://github.com/QTIM-Lab/slim_deployment" class="project-link" target="_blank">View Repository</a>
-  </div>
-</div>
+{% for project in site.projects %}
+- **[{{ project.title }}]({{ project.url | relative_url }})** - {{ project.description }}
+  {% if project.repo %}[View Repository]({{ project.repo }}){% endif %}
+{% endfor %}
+
+---
+*QTIM Lab - Quantitative Translational Imaging in Medicine*

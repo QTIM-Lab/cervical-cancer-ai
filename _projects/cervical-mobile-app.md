@@ -1,7 +1,7 @@
 ---
 title: Cervical Mobile App
 repo: https://github.com/QTIM-Lab/cervical_mobile_app
-description: Flutter-based point-of-care inference UI for Android devices.
+description: Point-of-care inference UI for Android devices.
 layout: default
 ---
 
