@@ -1,0 +1,24 @@
+title: Cervical Cancer AI Suite
+description: QTIM Lab cervical cancer AI research projects
+url: "https://qtim-lab.github.io"
+baseurl: "/cervical-cancer-ai"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
